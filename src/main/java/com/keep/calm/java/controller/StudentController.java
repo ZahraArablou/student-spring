@@ -11,16 +11,10 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    public StudentController() {
-
-    }
-    public List<Student> getAllStudents() {
+      public List<Student> getAllStudents() {
 //        studentService= new StudentServiceImpl();
         return studentService.getAllStudent();
 
     }
 
-    public StudentController(StudentService studentService) {
-        this.studentService = studentService;
     }
-}
