@@ -1,10 +1,11 @@
 package com.keep.calm.java.repository;
 
 import com.keep.calm.java.model.Student;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class StudentRepositoryImpl implements StudentRepository {
     @Override
     public List<Student> findAll(){

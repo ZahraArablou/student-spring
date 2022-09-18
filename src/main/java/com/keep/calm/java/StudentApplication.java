@@ -6,12 +6,15 @@ import com.keep.calm.java.model.Student;
 import com.keep.calm.java.repository.StudentRepository;
 import com.keep.calm.java.repository.StudentRepositoryImpl;
 import com.keep.calm.java.service.StudentServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.List;
 
 public class StudentApplication {
+//    @Autowired
+//    private StudentController studentController;
     public static void main(String[] args) {
 //        StudentRepository studentRepository = new StudentRepositoryImpl();
 //        StudentServiceImpl studentService = new StudentServiceImpl();
@@ -21,6 +24,7 @@ public class StudentApplication {
 //        StudentController studentControllers = new StudentController(studentService);
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 StudentController studentController = applicationContext.getBean("studentController",StudentController.class);
+
         List<Student> students = studentController.getAllStudents();
         System.out.println(students);
     }
