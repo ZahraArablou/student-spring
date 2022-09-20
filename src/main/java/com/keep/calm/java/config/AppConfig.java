@@ -6,11 +6,12 @@ import com.keep.calm.java.repository.StudentRepositoryImpl;
 import com.keep.calm.java.service.StudentService;
 import com.keep.calm.java.service.StudentServiceImpl;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScans({"com.keep.calm.java"})
+@ComponentScan({"com.keep.calm.java"})
 public class AppConfig {
 //
 //    @Bean("studentRepository")

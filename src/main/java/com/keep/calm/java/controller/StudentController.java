@@ -5,9 +5,10 @@ import com.keep.calm.java.service.StudentService;
 import com.keep.calm.java.service.StudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
 import java.util.List;
-@Component
+@Controller
 public class StudentController {
     @Autowired
     private StudentService studentService;
