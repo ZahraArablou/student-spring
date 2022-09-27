@@ -21,7 +21,7 @@ public class StudentServiceImplTest {
     private StudentRepository studentRepositry;
 
     @InjectMocks
-    private StudentService classUnderTestService;
+    private StudentServiceImpl classUnderTestService;
 
     @Test
     public void testGetAllStudent() {
